@@ -1,0 +1,38 @@
+.product {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 300px;
+  img {
+    width: 100%;
+  }
+  .details {
+    padding: 10px;
+    color: #666;
+    .brand {
+      font-weight: bold;
+      color: #111;
+      margin-bottom: 5px;
+    }
+    .price {
+      margin-top: 5px;
+    }
+  }
+  button {
+    border: 1px solid #333;
+    border-radius: 50px;
+    color: #333;
+    font-size: inherit;
+    padding: 15px;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+    outline: 0 none;
+    &:hover {
+      background: #111;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
