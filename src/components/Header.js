@@ -13,7 +13,7 @@ export class Header extends Component {
                 <Link to='/'>Home</Link>
               </li>
               <li>
-                <Link to='/products'>Products</Link>
+                <Link to='/product'>Products</Link>
               </li>
             </ul>
           </nav>

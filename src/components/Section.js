@@ -7,7 +7,7 @@ export class Section extends Component {
   render() {
     return (
       <section>
-        <Route path='/products' component={Products} exact />
+        <Route path='/product' component={Products} exact />
         <Route path='/product/:id' component={Details} />
       </section>
     )
