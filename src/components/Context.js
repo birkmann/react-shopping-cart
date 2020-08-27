@@ -7,8 +7,7 @@ export class DataProvider extends Component {
     products: [
       {
         _id: '1',
-        title:
-          'Polaroid OneStep+ White (9015) Bluetooth Connected Instant Film Camera',
+        title: 'Polaroid OneStep+ White (9015)',
         src:
           'https://images-na.ssl-images-amazon.com/images/I/715aC71nXEL._AC_SL1500_.jpg',
         desciption: 'polaroid cameras',
@@ -30,7 +29,7 @@ export class DataProvider extends Component {
       },
       {
         _id: '3',
-        title: 'Fitbit Charge 4 Fitness and Activity Tracker with Built-in GPS',
+        title: 'Fitbit Charge 4 Fitness',
         src:
           'https://images-na.ssl-images-amazon.com/images/I/71smqRr0pmL._AC_SL1500_.jpg',
         desciption: 'fit bit',
