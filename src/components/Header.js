@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './styles/header.scss'
+import { DataContext } from './Context'
 
 export class Header extends Component {
+  static contextType = DataContext
+
   render() {
+    const { cart } = this.context
     return (
       <header className='header-main'>
         <div className='container'>
@@ -19,7 +23,7 @@ export class Header extends Component {
           </nav>
           <div className='cart'>
             <Link to='cart'>
-              <span className='items-in-cart'>0</span>
+              <span className='items-in-cart'>{cart.length}</span>
               <span>Items in Cart</span>
             </Link>
           </div>
