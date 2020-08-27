@@ -1,0 +1,37 @@
+.product-detail {
+  display: flex;
+  .image-wrapper {
+    padding: 2rem;
+    background: #fff;
+    max-width: 350px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .text {
+    padding: 0 2rem;
+    p {
+      margin: 1rem 0;
+    }
+    .price {
+      font-weight: bold;
+      color: #df0101;
+    }
+    .btn {
+      margin-top: auto;
+      background: #333;
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      border: 0 none;
+      border-radius: 0.25rem;
+      text-decoration: none;
+      margin-top: 1rem;
+      display: inline-block;
+      &:hover {
+        background: #111;
+        cursor: pointer;
+      }
+    }
+  }
+}
