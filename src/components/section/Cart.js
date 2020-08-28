@@ -6,8 +6,8 @@ export class Cart extends Component {
   static contextType = DataContext;
 
   render() {
-    const { cart, reduction, increase, removeProduct } = this.context;
-    if (cart.lenght === 0) {
+    const { cart, reduction, increase, removeProduct, total } = this.context;
+    if (cart.length === 0) {
       return <h2>No products in the cart.</h2>;
     } else {
       return (
@@ -20,7 +20,7 @@ export class Cart extends Component {
               <div className="text">
                 <h3>{item.title}</h3>
                 <p>{item.desciption}</p>
-                <p className="price">{item.price} €</p>
+                <p className="price">{item.price * item.count} €</p>
                 <div className="amount">
                   <button className="count" onClick={() => reduction(item._id)}>
                     -
@@ -38,7 +38,7 @@ export class Cart extends Component {
           ))}
           <div className="total">
             <Link to="/payment">Payment</Link>
-            <h3>Total: 0</h3>
+            <h3>Total: {total}</h3>
           </div>
         </>
       );
