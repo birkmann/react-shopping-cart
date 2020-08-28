@@ -31,6 +31,7 @@ export class Details extends Component {
   render() {
     //console.log(this.context.products)
     const { product } = this.state
+    const { addCart } = this.context
     return (
       <>
         {product.map((item) => (
@@ -42,7 +43,11 @@ export class Details extends Component {
               <h3>{item.title}</h3>
               <p>{item.desciption}</p>
               <p className='price'>{item.price} €</p>
-              <Link to='/cart' className='btn'>
+              <Link
+                to='/cart'
+                className='btn'
+                onClick={() => addCart(item._id)}
+              >
                 Add to cart
               </Link>
             </div>
