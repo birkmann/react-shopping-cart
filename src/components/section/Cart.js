@@ -24,7 +24,9 @@ export class Cart extends Component {
               <div className='text'>
                 <h3>{item.title}</h3>
                 <p>{item.desciption}</p>
-                <p className='price'>{item.price * item.count} €</p>
+                <p className='price'>
+                  {(item.price * item.count).toFixed(2)} €
+                </p>
                 <div className='amount'>
                   <button className='count' onClick={() => reduction(item._id)}>
                     -
@@ -42,7 +44,7 @@ export class Cart extends Component {
           ))}
           <div className='total'>
             <Link to='/payment'>Payment</Link>
-            <h3>Total: {total} €</h3>
+            <h3>Total: {total.toFixed(2)} €</h3>
           </div>
         </>
       )

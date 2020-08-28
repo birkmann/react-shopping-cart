@@ -103,10 +103,9 @@ export class DataProvider extends Component {
 
   componentDidUpdate() {
     localStorage.setItem('dataCart', JSON.stringify(this.state.cart))
-    localStorage.setItem('dataTotal', JSON.stringify(this.state.cart))
+    localStorage.setItem('dataTotal', JSON.stringify(this.state.total))
   }
 
-  /*
   componentDidMount() {
     const dataCart = JSON.parse(localStorage.getItem('dataCart'))
     if (dataCart !== null) {
@@ -117,7 +116,6 @@ export class DataProvider extends Component {
       this.setState({ total: dataTotal })
     }
   }
-*/
 
   render() {
     const { products, cart, total } = this.state
