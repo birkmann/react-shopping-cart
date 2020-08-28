@@ -1,18 +1,25 @@
 .product-detail {
   display: flex;
+  flex-direction: column;
+  @media (min-width: 48rem) {
+    flex-direction: row;
+  }
   .image-wrapper {
     padding: 2rem;
     background: #fff;
-    max-width: 350px;
+    margin-bottom: 2rem;
     img {
       width: 100%;
       height: auto;
     }
   }
   .text {
-    padding: 0 2rem;
+    @media (min-width: 48rem) {
+      padding: 0 2rem;
+    }
     p {
       margin: 1rem 0;
+      line-height: 1.618rem;
     }
     .price {
       font-weight: bold;

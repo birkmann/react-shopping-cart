@@ -11,7 +11,10 @@
       display: flex;
       li {
         list-style: none;
-        margin-right: 2rem;
+        margin-right: 1rem;
+        @media (min-width: 48rem) {
+          margin-right: 2rem;
+        }
         a {
           display: block;
           text-decoration: none;

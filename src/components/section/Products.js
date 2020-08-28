@@ -12,20 +12,20 @@ export class Products extends Component {
       <DataContext.Provider value={{ products }}>
         <div className='products'>
           {products.map((product) => (
-            <div className='product' key={product._id}>
-              <Link to={`/product/${product._id}`}>
+            <div className='product' key={product.id}>
+              <Link to={`/product/${product.id}`}>
                 <div className='image-wrapper'>
-                  <img src={product.src} alt='' />
+                  <img src={product.image} alt='' />
                 </div>
               </Link>
               <div className='content'>
                 <div className='price'>{product.price}€</div>
 
-                <Link to={`/product/${product._id}`}>
+                <Link to={`/product/${product.id}`}>
                   <h3>{product.title}</h3>
                 </Link>
-                <p>{product.desciption}</p>
-                <button onClick={() => this.context.addCart(product._id)}>
+                <p>{product.category}</p>
+                <button onClick={() => this.context.addCart(product.id)}>
                   Add to cart
                 </button>
               </div>

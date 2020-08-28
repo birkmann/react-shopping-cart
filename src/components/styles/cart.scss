@@ -1,0 +1,86 @@
+.cart {
+  .product {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    @media (min-width: 48rem) {
+      flex-direction: row;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      width: 100%;
+    }
+    .image-wrapper {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      @media (min-width: 48rem) {
+        margin-right: 5rem;
+        flex: 0 0 15rem;
+        margin-bottom: 0;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .delete {
+      color: #df0101;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      margin: 2rem 0 1rem;
+      svg {
+        margin-left: 0.5rem;
+      }
+    }
+    .price {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      color: #df0101;
+      font-weight: bold;
+    }
+    .amount {
+      display: flex;
+      align-items: center;
+      border: 1px solid #eee;
+      width: 100%;
+      max-width: 200px;
+      justify-content: space-between;
+      button.count {
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
+        background: #ccc;
+        border: 0 none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .value {
+        padding: 0 0.75rem;
+      }
+    }
+  }
+  .pay-button {
+    display: inline-flex;
+    text-decoration: none;
+    margin-top: 1rem;
+    background: #333;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border: 0 none;
+    border-radius: 0.25rem;
+    &:hover {
+      background: #111;
+      cursor: pointer;
+    }
+  }
+}
