@@ -1,6 +1,7 @@
 .product-detail {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5rem;
   @media (min-width: 48rem) {
     flex-direction: row;
   }

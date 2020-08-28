@@ -44,9 +44,9 @@ export class Details extends Component {
               <p>{item.category}</p>
               <p>{item.description}</p>
               <p className='price'>{item.price} €</p>
-              <button className='btn' onClick={() => addCart(item.id)}>
+              <Link to='/cart' className='btn' onClick={() => addCart(item.id)}>
                 Add to cart
-              </button>
+              </Link>
             </div>
           </div>
         ))}

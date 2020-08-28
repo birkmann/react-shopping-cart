@@ -11,10 +11,7 @@
       display: flex;
       li {
         list-style: none;
-        margin-right: 1rem;
-        @media (min-width: 48rem) {
-          margin-right: 2rem;
-        }
+        margin-right: 2rem;
         a {
           display: block;
           text-decoration: none;
@@ -23,7 +20,7 @@
       }
     }
   }
-  .cart {
+  .cart-icon {
     a {
       display: block;
       text-decoration: none;
@@ -36,6 +33,17 @@
         color: #fff;
         padding: 0.25rem 0.5rem;
         border-radius: 3rem;
+      }
+    }
+    .text {
+      display: none;
+      @media (min-width: 48rem) {
+        display: block;
+      }
+    }
+    svg {
+      @media (min-width: 48rem) {
+        margin-left: 0.5rem;
       }
     }
   }
