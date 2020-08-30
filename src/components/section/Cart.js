@@ -25,7 +25,6 @@ export class Cart extends Component {
               </div>
               <div className='text'>
                 <h3>{item.title}</h3>
-                <p>{item.desciption}</p>
                 <p className='price'>
                   {(item.price * item.count).toFixed(2)} €
                 </p>
